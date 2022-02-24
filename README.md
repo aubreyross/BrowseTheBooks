@@ -45,13 +45,25 @@ WHEN I click on the Logout button
 THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 ```
 
-## Technologies 
+## Technologies
+* HTML, CSS, Javascript
+* React
+* Node.js
+* Express.js
+* GraphQL API
+* JSON Web Token
+* Apollo Server
+* MongoDB + Mongoose 
 
 ## URLs
+Code: https://github.com/aubreyross/BrowseTheBooks
+Deployed:
 
 ## Preview
 
 ## Resources
+* Project 3: ART-underground
+* Student Mini Project
 
 
 
