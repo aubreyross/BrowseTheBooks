@@ -17,8 +17,6 @@
   },
   "dependencies": {
     "@apollo/client": "^3.5.9",
-    "apollo-link-context": "^1.0.20",
-    "apollo-server-express": "^3.6.3",
-    "mongoose": "^6.2.3"
+    "apollo-link-context": "^1.0.20"
   }
 }
