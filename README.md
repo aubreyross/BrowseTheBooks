@@ -52,8 +52,9 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 * Express.js
 * GraphQL API
 * JSON Web Token
-* Apollo Server
+* Apollo Server + Apollo Provider
 * MongoDB + Mongoose 
+* Heroku
 
 ## URLs
 Code: https://github.com/aubreyross/BrowseTheBooks
@@ -64,6 +65,11 @@ Deployed:
 ## Resources
 * Project 3: ART-underground
 * Student Mini Project
+* ReadMe Requirements
+* https://coding-boot-camp.github.io/full-stack/
+* https://coding-boot-camp.github.io/full-stack/mongodb/how-to-set-up-mongodb-atlas
+* https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas
+  
 
 
 
