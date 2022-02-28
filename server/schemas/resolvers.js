@@ -15,51 +15,51 @@ const resolvers = {
 
   Mutation: {
     addUser: async (parent, args) => {
-        const user = await User.create(args);
-        const token = signToken(user);
-        return { token, user };
-      },
+      const user = await User.create(args);
+      const token = signToken(user);
+      return { token, user };
+    },
 
     login: async (parent, { email, password }) => {
-        const user = await User.findOne({ email });
+      const user = await User.findOne({ email });
 
-        if (!user) {
-          throw new AuthenticationError('Incorrect credentials');
-        }
+      if (!user) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
 
-        const correctPw = await user.isCorrectPassword(password);
+      const correctPw = await user.isCorrectPassword(password);
 
-        if (!correctPw) {
-          throw new AuthenticationError('Incorrect credentials');
-        }
+      if (!correctPw) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
 
-        const token = signToken(user);
+      const token = signToken(user);
 
-        return { token, user };
-      },
-      saveBook: async (parent, { newBook }, context) => {
-        if (context.user) {
-          const updatedUser = await User.findByIdAndUpdate(
-            { _id: context.user._id },
-            { $push: { savedBooks: newBook } },
-            { new: true }
-          );
-            return updatedUser;
-          }
-          throw new AuthenticationError('Please login to continue');
-        },
-      removeBook: async (parent, { bookId }, context) => {
-        if (context.user) {
-          const updatedUser = await User.findByIdAndUpdate(
-            { _id: context.user._id },
-            { $pull: { savedBooks: { bookId } } },
-            { new: true }
-          );
-            return updatedUser;
-          }
-          throw new AuthenticationError('Please login to continue');
-          },
-        },
-      };
+      return { token, user };
+    },
+    saveBook: async (parent, { newBook }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $push: { savedBooks: newBook } },
+          { new: true }
+        );
+        return updatedUser;
+      }
+      throw new AuthenticationError('Please login to continue');
+    },
+    removeBook: async (parent, { bookId }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $pull: { savedBooks: { bookId } } },
+          { new: true }
+        );
+        return updatedUser;
+      }
+      throw new AuthenticationError('Please login to continue');
+    },
+  },
+};
 
 module.exports = resolvers;
