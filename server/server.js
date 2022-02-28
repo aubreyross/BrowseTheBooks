@@ -15,11 +15,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 //initializes ApolloServer instance
-const server = new ApolloServer({
-  typeDefs, 
-  resolvers, 
-  // context: authMiddleware
-});
+const server = new ApolloServer({ typeDefs, resolvers });
 
 server.applyMiddleware({ app });
 
