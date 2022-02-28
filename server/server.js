@@ -26,7 +26,6 @@ async function startApolloServer(typeDefs, resolvers){
   const app = express();
   await server.start();
   server.applyMiddleware({app, path: '/graphql'});
-  // db.once('open', () => {
   app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}${server.graphqlPath}`);
 })
@@ -34,10 +33,10 @@ async function startApolloServer(typeDefs, resolvers){
 
 startApolloServer(typeDefs, resolvers);
 
-server.applyMiddleware({ app });
+// server.applyMiddleware({ app });
 
 //middleware
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // if we're in production, serve client/build as static assets
