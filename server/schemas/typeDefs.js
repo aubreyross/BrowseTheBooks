@@ -1,5 +1,7 @@
 const { gql } = require('apollo-server-express');
 
+//graph QL Schemas for user, book, searched book, and authentication
+//types define the entry points for a GraphQL API.
 const typeDefs = gql`
   type User {
     _id: ID

@@ -70,6 +70,8 @@ Deployed: https://browsethebooks.herokuapp.com/
 * https://coding-boot-camp.github.io/full-stack/mongodb/how-to-set-up-mongodb-atlas
 * https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas
 * https://graphql.org/learn/queries/
+* https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e
+* A special thank you to the BCS learning assistant - Chris - that helped me solve the connectivity issues due to a bug in the recent apollo-express version
   
 
 
