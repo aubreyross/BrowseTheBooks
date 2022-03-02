@@ -57,10 +57,16 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 * Heroku
 
 ## URLs
-Code: https://github.com/aubreyross/BrowseTheBooks
-Deployed: https://browsethebooks.herokuapp.com/
+* Code: https://github.com/aubreyross/BrowseTheBooks
+* Deployed: https://browsethebooks.herokuapp.com/
+
 
 ## Preview
+![Screen Shot 2022-02-28 at 4 41 32 AM](https://user-images.githubusercontent.com/87405979/156309772-014b23a7-34e9-4eff-a1d1-930fecb5675b.png)
+
+![Screen Shot 2022-03-02 at 12 50 27 AM](https://user-images.githubusercontent.com/87405979/156310018-fd70b2e1-5c67-4791-ab43-e717055d5e8a.png)
+
+
 
 ## Resources
 * Project 3: ART-underground
