@@ -1,6 +1,10 @@
 # 21 MERN: Book Search Engine
 
-Book Search Engine initially utilized the Google Books API search engine built with a RESTful API and was refactored to the GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. 
+BrowseTheBooks is a book search engine initially created with restful API, which was then replaced with graphQL built & Apollo Server. GraphQL an open-source data query language for APIs, allowing us to fetch only the data we want from the database when we need it.
+
+Users can search for books using the input field, displaying the book’s title, author, description, image, and a link to that book on the Google Books site. Users are provided the option to login/sign up with username, email address, and password which will provide them the ability to save books as needed.
+
+This app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. 
 
 
 ## User Story
